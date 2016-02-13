@@ -1,3 +1,6 @@
+import os
+import shutil
+
 """
     This script is used for:
     1. check whether directory r"J:\\UGNX\\NX_LIB", including all the files
@@ -16,38 +19,47 @@
     4. For dirs that both exist in src and dst, step into 2.
 
 """
-import os
 
 
 class Log:
-    def __init__(self, src, dst):
-        pass
-        # self.log_
+    def __init__(self, dir_src, dir_dst):
+        self.dir_src = dir_src
+        self.dir_dst = dir_dst
+        self.log_not_in_dst = []
+        self.log_src_is_newer = []
 
-    def log_last_status(self):
-        pass
+    def src_to_dst(self, file_path):
+        return file_path.replace(self.dir_src, self.dir_dst)
 
-    def dump_log(self):
-        pass
+    def walk(self, dir_src):
+        root, dirs, files = os.walk(dir_src).__next__()
+        for f in files:
+            file_path = os.path.join(root, f)
+            if not (os.path.exists(self.src_to_dst(file_path))):
+                self.log_not_in_dst.append(file_path)
+            elif os.stat(file_path)[8] > os.stat(self.src_to_dst(file_path))[8]:
+                self.log_src_is_newer.append(file_path)
+        for d in dirs:
+            self.walk(os.path.join(root, d))
 
+    def show(self):
+        for x in self.log_not_in_dst:
+            print(x)
+        for x in self.log_src_is_newer:
+            print(x)
 
-class SrcChecker:
+    def exec(self):
+        for f in self.log_src_is_newer:
+            shutil.copyfile(f, self.src_to_dst(f))
+            print("Copy " + f + " from src to dst.")
 
-    def __init__(self):
-        pass
-
-        # def find_
-    def src_equal_file(self):
-        pass
-
-
-# class
-
+        for f in self.log_not_in_dst:
+            shutil.copyfile(f, self.src_to_dst(f))
+            print("Copy " + f + " from src to dst.")
 
 if __name__ == "__main__":
-    print(os.getcwd())
-    dir_src = r"xparts_update\testdata\src"
-    dir_dst = r"xparts_update\testdata\dst"
-    for x in os.listdir(dir_src):
-        print(x)
-    pass
+    dir_src = r"C:\SeaGit\ToolsSet\xparts_update\testdata\src"
+    dir_dst = r"C:\SeaGit\ToolsSet\xparts_update\testdata\dst"
+    log = Log(dir_src, dir_dst)
+    log.walk(dir_src)
+    log.exec()
