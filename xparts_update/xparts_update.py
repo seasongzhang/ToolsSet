@@ -1,6 +1,8 @@
 import os
+import stat
 import shutil
 import codecs
+import time
 
 
 # This script is used for:
@@ -33,11 +35,12 @@ class Log:
     def walk(self, dir_src):
         root, dirs, files = os.walk(dir_src).__next__()
         for f in files:
-            file_path = os.path.join(root, f)
-            if not (os.path.exists(self.src_to_dst(file_path))):
-                self.log_not_in_dst.append(file_path)
-            elif os.stat(file_path).st_mtime_ns > os.stat(self.src_to_dst(file_path)).st_mtime_ns:
-                self.log_src_is_newer.append(file_path)
+            if f.endswith('.prt'):
+                file_path = os.path.join(root, f)
+                if not (os.path.exists(self.src_to_dst(file_path))):
+                    self.log_not_in_dst.append(file_path)
+                elif os.stat(file_path).st_mtime_ns > os.stat(self.src_to_dst(file_path)).st_mtime_ns:
+                    self.log_src_is_newer.append(file_path)
         for d in dirs:
             self.walk(os.path.join(root, d))
 
@@ -49,7 +52,7 @@ class Log:
                 print(x)
                 f.write(x + "\r\n")
             print()
-            f.write("\r\n  ")
+            f.write("\r\n")
             print("These files are newer src than in dst.")
             f.write("These files are newer src than in dst.\r\n")
             for x in self.log_src_is_newer:
@@ -57,21 +60,44 @@ class Log:
                 f.write(x + "\r\n")
 
     def do(self):
+        copy_log = open("copy_log.txt", "a")
+        time_array = time.localtime(int(time.time()))
+        time_str = time.strftime("%Y-%m-%d %H:%M:%S", time_array)
+        copy_log.write(time_str)
         for f in self.log_src_is_newer:
+            f_dst = self.src_to_dst(f)
             try:
-                shutil.copyfile(f, self.src_to_dst(f))
+                shutil.copyfile(f, f_dst)
             except PermissionError:
-                os.chmod(self.src_to_dst(f), )
+                imode = stat.S_IMODE(os.stat(f_dst)[stat.ST_MODE])
+                os.chmod(f_dst, imode + 0o222)
+                imode_post = stat.S_IMODE(os.stat(f_dst)[stat.ST_MODE])
+                print("Change " + f_dst + " 's mode from " + oct(imode) + " to " + oct(imode_post))
             print("Copy " + f + " from src to dst.")
+            copy_log.write("Copy " + f + " from src to dst.")
 
         for f in self.log_not_in_dst:
+            # 通过递归的方式确保在copyfile之前文件路径中的文件夹都被创建
+            while not os.path.exists(os.path.split(self.src_to_dst(f))[0]):
+                self.mkdir_recursively(self.src_to_dst(f))
+
             shutil.copyfile(f, self.src_to_dst(f))
             print("Copy " + f + " from src to dst.")
+            copy_log.write("Copy " + f + " from src to dst.")
+        copy_log.close()
+
+    def mkdir_recursively(self, file_path):
+        left_path = os.path.split(file_path)[0]
+        try:
+            print("Mkdir " + left_path)
+            os.mkdir(left_path)
+        except FileNotFoundError:
+            self.mkdir_recursively(left_path)
 
 
 if __name__ == "__main__":
-    ds = r"D:\Backup\NX_LIB"
-    dd = r"D:\Backup\XParts"
+    ds = r"E:\SeaGit\ToolsSet\xparts_update\test\data\src"
+    dd = r"E:\SeaGit\ToolsSet\xparts_update\test\data\dst"
     log = Log(ds, dd)
     log.walk(ds)
     log.show()
