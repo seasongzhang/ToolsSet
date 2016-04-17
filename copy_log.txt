@@ -1,0 +1,9 @@
+
+2016-03-14 10:47:51
+
+2016-03-14 10:55:07
+Copy E:\SeaGit\ToolsSet\xparts_update\test\data\src\E.txt from src to dst.
+Copy E:\SeaGit\ToolsSet\xparts_update\test\data\src\EE\E.txt from src to dst.
+Copy E:\SeaGit\ToolsSet\xparts_update\test\data\src\B.txt from src to dst.
+Copy E:\SeaGit\ToolsSet\xparts_update\test\data\src\BB\B.txt from src to dst.
+2016-03-14 10:56:532016-03-14 10:59:07
