@@ -1,0 +1,464 @@
+Harmonics - Per EN/IEC61000-3-12, Ed. 2.0(Phase A-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment: Comment
+Customer: Customer information
+
+Test Result: Fail            Source qualification: Distorted
+
+Current & voltage waveforms	 
+
+
+
+Harmonics and Class 3 limit line			European Limits
+
+
+
+Test result:  Fail	Worst harmonic was #5 with 95.38 % of the limit.
+
+Current Test Result Summary (Phase A-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment:  Comment
+Customer:  Customer information
+
+Test Result: Fail	Measured I-ref: 25.878(Amps)	Source:  Distorted
+I-THC(%): 52.3       Limit(%): 37.0         PWHC(%):  26.5        PWHC Limit(%):  38.0         
+
+Highest parameter values during test:
+V_RMS (Volts): 	220.43	Frequency(Hz):   50.00
+I_Peak (Amps):	59.244	I_RMS (Amps):	25.878
+I_Fund (Amps):	21.936	Crest Factor:	2.303
+Power (Watts): 	4818	Power Factor:	0.845
+
+Harm#	Harms(avg)	100%Limit	%of Limit	Harms(max)	150%Limit	%of Limit	Status
+
+	2	0.301	2.060	14.6	0.333	3.090	10.8	Pass
+	3	0.319	N/A	N/A	0.369	N/A	N/A	N/A
+	4	0.096	1.030	9.3	0.111	1.545	7.2	Pass
+	5	11.384	7.982	142.6	11.416	11.973	95.3	Fail
+	6	0.060	0.687	8.8	0.073	1.030	7.1	Pass
+	7	6.659	5.150	129.3	6.675	7.725	86.4	Fail
+	8	0.033	0.515	6.5	0.049	0.772	6.4	Pass
+	9	0.034	N/A	N/A	0.046	N/A	N/A	N/A
+	10	0.026	0.412	6.4	0.035	0.618	5.7	Pass
+	11	1.631	3.090	52.8	1.647	4.635	35.5	Pass
+	12	0.031	0.343	9.0	0.043	0.515	8.4	Pass
+	13	1.492	1.802	82.8	1.502	2.704	55.5	Pass
+	14	0.023	N/A	N/A	0.031	N/A	N/A	N/A
+	15	0.017	N/A	N/A	0.026	N/A	N/A	N/A
+	16	0.019	N/A	N/A	0.027	N/A	N/A	N/A
+	17	0.837	N/A	N/A	0.848	N/A	N/A	N/A
+	18	0.026	N/A	N/A	0.038	N/A	N/A	N/A
+	19	0.674	N/A	N/A	0.686	N/A	N/A	N/A
+	20	0.020	N/A	N/A	0.030	N/A	N/A	N/A
+	21	0.016	N/A	N/A	0.024	N/A	N/A	N/A
+	22	0.018	N/A	N/A	0.025	N/A	N/A	N/A
+	23	0.546	N/A	N/A	0.557	N/A	N/A	N/A
+	24	0.019	N/A	N/A	0.026	N/A	N/A	N/A
+	25	0.448	N/A	N/A	0.456	N/A	N/A	N/A
+	26	0.017	N/A	N/A	0.024	N/A	N/A	N/A
+	27	0.016	N/A	N/A	0.024	N/A	N/A	N/A
+	28	0.018	N/A	N/A	0.026	N/A	N/A	N/A
+	29	0.399	N/A	N/A	0.407	N/A	N/A	N/A
+	30	0.018	N/A	N/A	0.030	N/A	N/A	N/A
+	31	0.334	N/A	N/A	0.342	N/A	N/A	N/A
+	32	0.017	N/A	N/A	0.029	N/A	N/A	N/A
+	33	0.016	N/A	N/A	0.023	N/A	N/A	N/A
+	34	0.016	N/A	N/A	0.028	N/A	N/A	N/A
+	35	0.318	N/A	N/A	0.325	N/A	N/A	N/A
+	36	0.018	N/A	N/A	0.023	N/A	N/A	N/A
+	37	0.270	N/A	N/A	0.282	N/A	N/A	N/A
+	38	0.016	N/A	N/A	0.024	N/A	N/A	N/A
+	39	0.016	N/A	N/A	0.022	N/A	N/A	N/A
+	40	0.015	N/A	N/A	0.023	N/A	N/A	N/A
+								
+Note: Measured I-ref was applied for this test. 
+
+
+Voltage Source Verification Data (Phase A-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment:  Comment
+Customer:  Customer information
+
+Test Result: Fail            Source qualification: Distorted 
+Current harmonics are corrected for source distortion, and are within +/-5%
+Measurements are compliant with IEC/EN61000-3-12 Ed.4 & IEC/EN61000-4-7
+
+Highest parameter values during test:
+Voltage (Vrms): 	220.43	Frequency(Hz):   50.00
+I_Peak (Amps):	59.244	I_RMS (Amps):	25.878
+I_Fund (Amps):	21.936	Crest Factor:	2.303
+Power (Watts): 	4818	Power Factor:	0.845
+
+Harm#	Harmonics V-rms	Limit V-rms	% of Limit	Status
+
+	2	0.162	0.882	18.32	OK
+	3	0.304	2.755	11.02	OK
+	4	0.110	0.881	12.47	OK
+	5	1.763	3.306	53.32	OK
+	6	0.088	0.882	9.96	OK
+	7	1.307	2.754	47.45	OK
+	8	0.088	0.881	9.93	OK
+	9	0.112	1.322	8.43	OK
+	10	0.078	0.881	8.90	OK
+	11	0.549	1.543	35.57	OK
+	12	0.100	0.661	15.07	OK
+	13	0.578	1.322	43.72	OK
+	14	0.077	0.661	11.67	OK
+	15	0.109	0.661	16.42	OK
+	16	0.089	0.661	13.45	OK
+	17	0.412	0.661	62.25	OK
+	18	0.085	0.661	12.92	OK
+	19	0.392	0.661	59.33	OK
+	20	0.162	0.661	24.50	OK
+	21	0.113	0.661	17.03	OK
+	22	0.079	0.661	11.99	OK
+	23	0.368	0.661	55.63	OK
+	24	0.097	0.661	14.69	OK
+	25	0.336	0.661	50.89	OK
+	26	0.085	0.661	12.91	OK
+	27	0.122	0.661	18.41	OK
+	28	0.096	0.661	14.48	OK
+	29	0.302	0.661	45.62	OK
+	30	0.090	0.661	13.66	OK
+	31	0.293	0.661	44.31	OK
+	32	0.080	0.661	12.08	OK
+	33	0.123	0.661	18.57	OK
+	34	0.083	0.661	12.49	OK
+	35	0.269	0.661	40.68	OK
+	36	0.092	0.661	13.99	OK
+	37	0.287	0.661	43.43	OK
+	38	0.090	0.661	13.62	OK
+	39	0.137	0.661	20.76	OK
+	40	0.134	0.661	20.34	OK
+
+
+Harmonics - Per EN/IEC61000-3-12, Ed. 2.0(Phase B-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment: Comment
+Customer: Customer information
+
+Test Result: Fail            Source qualification: Distorted
+
+Current & voltage waveforms	 
+
+
+
+Harmonics and Class 3 limit line			European Limits
+
+
+
+Test result:  Fail	Worst harmonic was #5 with 98.13 % of the limit.
+
+Current Test Result Summary (Phase B-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment:  Comment
+Customer:  Customer information
+
+Test Result: Fail	Measured I-ref:  25.231(Amps)	Source:  Distorted
+I-THC(%): 53.8       Limit(%): 37.0         PWHC(%):  28.1        PWHC Limit(%):  38.0         
+
+Highest parameter values during test:
+V_RMS (Volts): 	220.22	Frequency(Hz):   50.00
+I_Peak (Amps):	60.000	I_RMS (Amps):	25.231
+I_Fund (Amps):	21.158	Crest Factor:	2.384
+Power (Watts): 	4629	Power Factor:	0.834
+
+Harm#	Harms(avg)	100%Limit	%of Limit	Harms(max)	150%Limit	%of Limit	Status
+
+	2	0.278	2.008	13.9	0.316	3.012	10.5	Pass
+	3	0.319	N/A	N/A	0.633	N/A	N/A	N/A
+	4	0.091	1.004	9.1	0.108	1.506	7.2	Pass
+	5	11.415	7.782	146.7	11.440	11.673	98.0	Fail
+	6	0.052	0.669	7.8	0.064	1.004	6.4	Pass
+	7	6.598	5.021	131.4	6.609	7.531	87.8	Fail
+	8	0.032	0.502	6.4	0.048	0.753	6.4	Pass
+	9	0.034	N/A	N/A	0.120	N/A	N/A	N/A
+	10	0.030	0.402	7.4	0.039	0.602	6.5	Pass
+	11	1.702	3.012	56.5	1.721	4.519	38.1	Pass
+	12	0.021	0.335	6.3	0.029	0.502	5.7	Pass
+	13	1.470	1.757	83.6	1.481	2.636	56.2	Pass
+	14	0.024	N/A	N/A	0.032	N/A	N/A	N/A
+	15	0.062	N/A	N/A	0.072	N/A	N/A	N/A
+	16	0.021	N/A	N/A	0.030	N/A	N/A	N/A
+	17	0.880	N/A	N/A	0.895	N/A	N/A	N/A
+	18	0.016	N/A	N/A	0.023	N/A	N/A	N/A
+	19	0.670	N/A	N/A	0.682	N/A	N/A	N/A
+	20	0.019	N/A	N/A	0.037	N/A	N/A	N/A
+	21	0.046	N/A	N/A	0.058	N/A	N/A	N/A
+	22	0.020	N/A	N/A	0.036	N/A	N/A	N/A
+	23	0.578	N/A	N/A	0.588	N/A	N/A	N/A
+	24	0.016	N/A	N/A	0.023	N/A	N/A	N/A
+	25	0.447	N/A	N/A	0.456	N/A	N/A	N/A
+	26	0.018	N/A	N/A	0.033	N/A	N/A	N/A
+	27	0.034	N/A	N/A	0.044	N/A	N/A	N/A
+	28	0.020	N/A	N/A	0.034	N/A	N/A	N/A
+	29	0.423	N/A	N/A	0.432	N/A	N/A	N/A
+	30	0.016	N/A	N/A	0.028	N/A	N/A	N/A
+	31	0.331	N/A	N/A	0.341	N/A	N/A	N/A
+	32	0.017	N/A	N/A	0.029	N/A	N/A	N/A
+	33	0.031	N/A	N/A	0.042	N/A	N/A	N/A
+	34	0.017	N/A	N/A	0.025	N/A	N/A	N/A
+	35	0.337	N/A	N/A	0.347	N/A	N/A	N/A
+	36	0.015	N/A	N/A	0.023	N/A	N/A	N/A
+	37	0.270	N/A	N/A	0.282	N/A	N/A	N/A
+	38	0.016	N/A	N/A	0.023	N/A	N/A	N/A
+	39	0.025	N/A	N/A	0.035	N/A	N/A	N/A
+	40	0.017	N/A	N/A	0.022	N/A	N/A	N/A
+								
+Note: Measured I-ref was applied for this test. 
+
+
+Voltage Source Verification Data (Phase B-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment:  Comment
+Customer:  Customer information
+
+Test Result: Fail            Source qualification: Distorted 
+Current harmonics are corrected for source distortion, and are within +/-5%
+Measurements are compliant with IEC/EN61000-3-12 Ed.4 & IEC/EN61000-4-7
+
+Highest parameter values during test:
+Voltage (Vrms): 	220.22	Frequency(Hz):   50.00
+I_Peak (Amps):	60.000	I_RMS (Amps):	25.231
+I_Fund (Amps):	21.158	Crest Factor:	2.384
+Power (Watts): 	4629	Power Factor:	0.834
+
+Harm#	Harmonics V-rms	Limit V-rms	% of Limit	Status
+
+	2	0.171	0.880	19.46	OK
+	3	0.346	2.751	12.59	OK
+	4	0.137	0.880	15.56	OK
+	5	1.851	3.302	56.07	OK
+	6	0.102	0.880	11.55	OK
+	7	1.391	2.751	50.57	OK
+	8	0.116	0.880	13.17	OK
+	9	0.139	1.321	10.51	OK
+	10	0.112	0.881	12.66	OK
+	11	0.601	1.541	38.98	OK
+	12	0.109	0.660	16.48	OK
+	13	0.609	1.321	46.15	OK
+	14	0.120	0.660	18.23	OK
+	15	0.143	0.660	21.64	OK
+	16	0.101	0.660	15.23	OK
+	17	0.464	0.660	70.25	OK
+	18	0.111	0.660	16.76	OK
+	19	0.430	0.660	65.04	OK
+	20	0.130	0.660	19.65	OK
+	21	0.147	0.660	22.28	OK
+	22	0.107	0.660	16.17	OK
+	23	0.383	0.660	57.97	OK
+	24	0.101	0.660	15.26	OK
+	25	0.350	0.661	52.94	OK
+	26	0.108	0.660	16.38	OK
+	27	0.134	0.660	20.32	OK
+	28	0.115	0.660	17.47	OK
+	29	0.322	0.661	48.69	OK
+	30	0.095	0.660	14.39	OK
+	31	0.307	0.660	46.49	OK
+	32	0.095	0.660	14.39	OK
+	33	0.148	0.660	22.43	OK
+	34	0.128	0.660	19.39	OK
+	35	0.296	0.661	44.83	OK
+	36	0.099	0.660	14.96	OK
+	37	0.299	0.660	45.33	OK
+	38	0.097	0.660	14.74	OK
+	39	0.144	0.660	21.87	OK
+	40	0.117	0.660	17.70	OK
+
+
+Harmonics - Per EN/IEC61000-3-12, Ed. 2.0(Phase C-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment: Comment
+Customer: Customer information
+
+Test Result: Fail            Source qualification: Distorted
+
+Current & voltage waveforms	 
+
+
+
+Harmonics and Class 3 limit line			European Limits
+
+
+
+Test result:  Fail	Worst harmonic was #5 with 97.37 % of the limit.
+
+Current Test Result Summary (Phase C-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment:  Comment
+Customer:  Customer information
+
+Test Result: Fail	Measured I-ref: 25.252(Amps)	Source:  Distorted
+I-THC(%): 53.3       Limit(%): 37.0         PWHC(%):  27.7        PWHC Limit(%):  38.0         
+
+Highest parameter values during test:
+V_RMS (Volts): 	220.15	Frequency(Hz):   50.00
+I_Peak (Amps):	58.171	I_RMS (Amps):	25.252
+I_Fund (Amps):	21.230	Crest Factor:	2.316
+Power (Watts): 	4680	Power Factor:	0.842
+
+Harm#	Harms(avg)	100%Limit	%of Limit	Harms(max)	150%Limit	%of Limit	Status
+
+	2	0.282	2.007	14.1	0.310	3.011	10.3	Pass
+	3	0.319	N/A	N/A	0.626	N/A	N/A	N/A
+	4	0.076	1.004	7.5	0.092	1.505	6.1	Pass
+	5	11.326	7.778	145.6	11.357	11.667	97.3	Fail
+	6	0.085	0.669	12.7	0.094	1.004	9.4	Pass
+	7	6.517	5.018	129.9	6.530	7.527	86.7	Fail
+	8	0.029	0.502	5.8	0.041	0.753	5.5	Pass
+	9	0.034	N/A	N/A	0.117	N/A	N/A	N/A
+	10	0.028	0.401	7.0	0.035	0.602	5.8	Pass
+	11	1.674	3.011	55.6	1.688	4.516	37.4	Pass
+	12	0.037	0.335	11.0	0.045	0.502	8.9	Pass
+	13	1.425	1.756	81.2	1.435	2.635	54.5	Pass
+	14	0.021	N/A	N/A	0.028	N/A	N/A	N/A
+	15	0.067	N/A	N/A	0.079	N/A	N/A	N/A
+	16	0.019	N/A	N/A	0.026	N/A	N/A	N/A
+	17	0.882	N/A	N/A	0.894	N/A	N/A	N/A
+	18	0.026	N/A	N/A	0.035	N/A	N/A	N/A
+	19	0.635	N/A	N/A	0.646	N/A	N/A	N/A
+	20	0.017	N/A	N/A	0.024	N/A	N/A	N/A
+	21	0.054	N/A	N/A	0.063	N/A	N/A	N/A
+	22	0.018	N/A	N/A	0.025	N/A	N/A	N/A
+	23	0.583	N/A	N/A	0.593	N/A	N/A	N/A
+	24	0.022	N/A	N/A	0.030	N/A	N/A	N/A
+	25	0.413	N/A	N/A	0.424	N/A	N/A	N/A
+	26	0.015	N/A	N/A	0.024	N/A	N/A	N/A
+	27	0.042	N/A	N/A	0.050	N/A	N/A	N/A
+	28	0.017	N/A	N/A	0.024	N/A	N/A	N/A
+	29	0.435	N/A	N/A	0.443	N/A	N/A	N/A
+	30	0.019	N/A	N/A	0.034	N/A	N/A	N/A
+	31	0.305	N/A	N/A	0.314	N/A	N/A	N/A
+	32	0.014	N/A	N/A	0.022	N/A	N/A	N/A
+	33	0.040	N/A	N/A	0.047	N/A	N/A	N/A
+	34	0.015	N/A	N/A	0.021	N/A	N/A	N/A
+	35	0.348	N/A	N/A	0.358	N/A	N/A	N/A
+	36	0.017	N/A	N/A	0.025	N/A	N/A	N/A
+	37	0.244	N/A	N/A	0.254	N/A	N/A	N/A
+	38	0.013	N/A	N/A	0.019	N/A	N/A	N/A
+	39	0.034	N/A	N/A	0.042	N/A	N/A	N/A
+	40	0.014	N/A	N/A	0.021	N/A	N/A	N/A
+
+Note: Measured I-ref was applied for this test. 
+
+
+Voltage Source Verification Data (Phase C-Run time)
+
+EUT: Equipment under test	Tested by: Tested by
+Test category: Table:3,  Rsce=250,	Test Margin: 100
+Test date: 2016/4/13	Start time: 18:25:31	End time: 18:28:23
+Test duration (min): 2.5	Data file name: CTSMXH_H-000026.cts_data
+Comment:  Comment
+Customer:  Customer information
+
+Test Result: Fail            Source qualification: Distorted 
+Current harmonics are corrected for source distortion, and are within +/-5%
+Measurements are compliant with IEC/EN61000-3-12 Ed.4 & IEC/EN61000-4-7
+
+Highest parameter values during test:
+Voltage (Vrms): 	220.15	Frequency(Hz):   50.00
+I_Peak (Amps):	58.171	I_RMS (Amps):	25.252
+I_Fund (Amps):	21.230	Crest Factor:	2.316
+Power (Watts): 	4680	Power Factor:	0.842
+
+Harm#	Harmonics V-rms	Limit V-rms	% of Limit	Status
+
+	2	0.158	0.880	17.98	OK
+	3	0.255	2.751	9.26	OK
+	4	0.105	0.880	11.88	OK
+	5	1.779	3.301	53.91	OK
+	6	0.095	0.880	10.77	OK
+	7	1.314	2.751	47.77	OK
+	8	0.094	0.880	10.74	OK
+	9	0.108	1.320	8.18	OK
+	10	0.096	0.880	10.86	OK
+	11	0.568	1.541	36.85	OK
+	12	0.099	0.660	15.02	OK
+	13	0.562	1.320	42.53	OK
+	14	0.083	0.660	12.57	OK
+	15	0.082	0.660	12.47	OK
+	16	0.099	0.660	14.94	OK
+	17	0.441	0.660	66.82	OK
+	18	0.088	0.660	13.33	OK
+	19	0.391	0.660	59.26	OK
+	20	0.104	0.660	15.83	OK
+	21	0.089	0.660	13.51	OK
+	22	0.089	0.660	13.49	OK
+	23	0.383	0.660	58.06	OK
+	24	0.090	0.660	13.57	OK
+	25	0.318	0.660	48.16	OK
+	26	0.101	0.660	15.27	OK
+	27	0.087	0.660	13.24	OK
+	28	0.099	0.660	15.06	OK
+	29	0.309	0.660	46.88	OK
+	30	0.090	0.660	13.66	OK
+	31	0.296	0.660	44.78	OK
+	32	0.092	0.660	13.91	OK
+	33	0.088	0.660	13.36	OK
+	34	0.090	0.660	13.62	OK
+	35	0.297	0.660	44.96	OK
+	36	0.091	0.660	13.73	OK
+	37	0.261	0.660	39.56	OK
+	38	0.093	0.660	14.09	OK
+	39	0.098	0.660	14.89	OK
+	40	0.099	0.660	14.93	OK
+
+
+5th Harmonic Phase Angle and Magnitude for Phase A :
+H-5_min_phase :    119.0 Degree (Leading)
+H-5_max_phase :   119.5 Degree (Leading)
+H-5_ave_phase :    119.3 Degree (Leading)
+
+H-5_ave_vector_magnitude :        11.318 Amp
+H-5_standard_ave_magnitude :    11.384 Amp
+H-5_standard_max_magnitude :   11.357 Amp
+Ratio of H-5_ave_vector / H-5_standard_ave : 0.999
+
+
+
+
+
+
+
+Phase A = 142.643% of tested Rsce = 250.000, Rsce = 356.607
+Phase B = 146.706% of tested Rsce = 250.000, Rsce = 366.765
+Phase C = 145.633% of tested Rsce = 250.000, Rsce = 364.081
+Minimum Rsce required: Rsce = 366.765
+California Instruments		4/17/2016
+San Diego, California		8:25 PM	
+
+
+AMETEK Programmable Power CTS MXH V2.10.0		Page 2 of 3				
+

@@ -10,3 +10,6 @@
 #
 #     def test_classfun2(self):
 #         print("class test 2")
+
+d = {'a': 'A', 'b': 'B', 'c': "C"}
+d.get('a','b')
